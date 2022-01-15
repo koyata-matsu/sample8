@@ -1,0 +1,168 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.5em;
+    font-family: Helvetica Neue;
+}
+
+@media screen and (min-width:769px) {
+    div.inner{
+        width: 980px;
+        margin: 0 auto;
+    }
+    header {
+        height: 80px;
+        div.inner{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            div{
+                position: relative;
+                a{
+                    img{
+                        position: absolute;
+                        top: 50%;
+                        left: 0%;
+                        transform: translateY(-50%);
+                        -webkit-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                    }
+                }
+            }
+            ul {
+                display: flex;
+                li {
+                    line-height: 80px;
+                    margin-left: 20px;
+                    a {
+                        font-weight: bold;
+                        font-size: 1.6rem;
+                        &:hover{
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    
+    section#top.kv {
+        position: relative;
+        margin-bottom: 60px;
+        img{
+            width: 100vw;
+        }
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+            h2 {
+                color: #fff;
+                font-size: 3.6rem;
+                font-weight: bold;
+                padding-bottom: 10px;
+            }
+            span {
+                color: #fff;
+                font-size: 1.6rem;
+                font-weight: bold;
+            }
+        }
+    }
+    section.cha {
+        text-align: center;
+        margin-bottom: 90px;
+        h2 {
+            font-size: 3.2rem;
+            font-weight: bold;
+            margin-bottom: 50px;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            li {
+                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                width: 310px;
+                img {
+                    width: 100%;
+                }
+                div{
+                    height: 170px;
+                    padding: 20px;
+                    text-align: left;
+                    display:flex;
+                    flex-flow: column;
+                    justify-content:space-between;
+                    a {
+                        font-size: 1.8rem;
+                        font-weight: bold;
+                        line-height: 1.5;
+                        &:hover{
+                            opacity: 0.8;
+                        }
+                    }
+                    time {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+        a.more_btn {
+            font-size: 1.8rem;
+            font-weight: bold;
+            border: 1px solid #EEEEEE;
+            border-radius: 5px;
+            padding: 15px 110px;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+    section.contact {
+        background-image: url(/images/contact.png);
+        background-size: cover;
+        div{
+            text-align: center;
+            padding: 60px 0 45px;
+            h2 {
+                color: #fff;
+                margin-bottom:50px;
+                font-size: 3.6rem;
+                font-weight: bold;
+            }
+            p {
+                color: #fff;
+                font-size: 1.6rem;
+                font-weight: bold;
+                line-height: 1.8;
+                margin-bottom: 50px;
+            }
+            a {
+                display: inline-block;
+                background-color:#83032A ;
+                padding: 20px 25px;
+                border-radius: 5px;
+                color: #fff;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+    footer {
+        text-align: center;
+        padding: 30px 0;
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: bold;
+        background-color: #333333;
+    }
+}
