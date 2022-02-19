@@ -1,26 +1,28 @@
-html{
+html {
     font-size: 62.5%;
 }
-body{
+
+body {
     font-size: 1.5em;
     font-family: Helvetica Neue;
 }
 
 @media screen and (min-width:769px) {
-    div.inner{
-        width: 980px;
+    div.inner {
+        max-width: 980px;
+        width: 90%;
         margin: 0 auto;
     }
     header {
         height: 80px;
-        div.inner{
+        div.inner {
             display: flex;
             justify-content: space-between;
             padding: 0 20px;
-            div{
+            div {
                 position: relative;
-                a{
-                    img{
+                a {
+                    img {
                         position: absolute;
                         top: 50%;
                         left: 0%;
@@ -38,20 +40,18 @@ body{
                     a {
                         font-weight: bold;
                         font-size: 1.6rem;
-                        &:hover{
+                        &:hover {
                             opacity: 0.7;
                         }
                     }
                 }
             }
         }
-        
     }
-    
     section#top.kv {
         position: relative;
         margin-bottom: 60px;
-        img{
+        img {
             width: 100vw;
         }
         div {
@@ -89,22 +89,23 @@ body{
             margin-bottom: 50px;
             li {
                 box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-                width: 310px;
+                max-width: 310px;
+                width: 32%;
                 img {
                     width: 100%;
                 }
-                div{
+                div {
                     height: 170px;
                     padding: 20px;
                     text-align: left;
-                    display:flex;
+                    display: flex;
                     flex-flow: column;
-                    justify-content:space-between;
+                    justify-content: space-between;
                     a {
-                        font-size: 1.8rem;
+                        font-size: 1.6rem;
                         font-weight: bold;
                         line-height: 1.5;
-                        &:hover{
+                        &:hover {
                             opacity: 0.8;
                         }
                     }
@@ -121,20 +122,20 @@ body{
             border-radius: 5px;
             padding: 15px 110px;
             box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-            &:hover{
+            &:hover {
                 opacity: 0.7;
             }
         }
     }
     section.contact {
-        background-image: url(/images/contact.png);
+        background-image: url(../images/contact.png);
         background-size: cover;
-        div{
+        div {
             text-align: center;
             padding: 60px 0 45px;
             h2 {
                 color: #fff;
-                margin-bottom:50px;
+                margin-bottom: 50px;
                 font-size: 3.6rem;
                 font-weight: bold;
             }
@@ -147,11 +148,11 @@ body{
             }
             a {
                 display: inline-block;
-                background-color:#83032A ;
+                background-color: #83032A;
                 padding: 20px 25px;
                 border-radius: 5px;
                 color: #fff;
-                &:hover{
+                &:hover {
                     opacity: 0.7;
                 }
             }
